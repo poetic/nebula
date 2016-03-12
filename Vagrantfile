@@ -9,7 +9,7 @@ Vagrant.configure(2) do |config|
   end
 
   config.vm.network "private_network", ip: "192.168.33.10"
-  config.vm.synced_folder "www", "/var/www", type: 'nfs'
+  config.vm.synced_folder "www", "/var/www", type: 'nfs', create: true
 
   # Provider-specific configuration so you can fine-tune various
   # backing providers for Vagrant. These expose provider-specific options.
