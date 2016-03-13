@@ -1,0 +1,8 @@
+---
+alternate_id: 10100
+host_uid: 501
+host_gid: 20
+web_user: 'www-data'
+web_group: 'www-data'
+move_remote_user: false
+move_remote_group: false

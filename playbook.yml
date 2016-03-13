@@ -1,0 +1,17 @@
+---
+- hosts: all
+  become: yes
+
+  #tasks:
+    #- include: tasks/remap-uid-gid.yml
+
+  roles:
+    - nebula.remap-user-group
+    - geerlingguy.postfix
+    - geerlingguy.apache
+    - geerlingguy.mysql
+    - geerlingguy.php
+    - geerlingguy.php-pecl
+    - geerlingguy.php-mysql
+    - geerlingguy.composer
+    - geerlingguy.drush

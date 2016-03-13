@@ -1,0 +1,9 @@
+---
+- src: geerlingguy.postfix
+- src: geerlingguy.apache
+- src: geerlingguy.mysql
+- src: geerlingguy.php
+- src: geerlingguy.php-pecl
+- src: geerlingguy.php-mysql
+- src: geerlingguy.composer
+- src: geerlingguy.drush
