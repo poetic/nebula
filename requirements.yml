@@ -1,4 +1,5 @@
 ---
+- src: geerlingguy.git
 - src: geerlingguy.postfix
 - src: geerlingguy.apache
 - src: geerlingguy.mysql
