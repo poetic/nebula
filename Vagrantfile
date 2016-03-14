@@ -11,6 +11,7 @@ Vagrant.configure(2) do |config|
 
   config.vm.network "private_network", ip: "192.168.33.10"
   config.vm.synced_folder "www", "/var/www", type: 'nfs', create: true
+  config.vm.synced_folder "aliases", "/etc/avahi/aliases.d", type: 'nfs', create: true
 
    config.vm.provider "virtualbox" do |vb|
      vb.memory = "1024"
