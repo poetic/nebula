@@ -10,8 +10,8 @@ apache_mods_enabled:
 apache_vhosts:
   - servername: "local"
     extra_parameters: |
-     VirtualDocumentRoot /var/www/%-2
-     <Directory />
+     VirtualDocumentRoot /var/www/%-2/web
+     <Directory /var/www>
        AllowOverride All
        Options -Indexes +FollowSymLinks
        Require all granted
