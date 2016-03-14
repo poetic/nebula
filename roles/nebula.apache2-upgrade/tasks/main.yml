@@ -1,0 +1,3 @@
+---
+- name: add repo with newer apache versions
+  apt_repository: repo='ppa:ondrej/apache2' update_cache=yes
