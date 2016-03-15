@@ -8,3 +8,5 @@
 
 - name: install avahi-aliases
   pip: name='git+git://github.com/till/avahi-aliases.git@topics/make-it-run' editable=false
+  notify:
+    - start avahi-aliases
