@@ -6,10 +6,8 @@
     - vars/main.yml
 
   roles:
-    - nebula.remap-user-group
-    - nebula.apache2-upgrade
     - geerlingguy.git
-    - nebula.avahi
+    - nebula
     - geerlingguy.postfix
     - geerlingguy.apache
     - geerlingguy.mysql

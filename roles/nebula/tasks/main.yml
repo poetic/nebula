@@ -1,0 +1,4 @@
+---
+- include: remap-user-group.yml
+- include: apache2-upgrade.yml
+- include: avahi.yml
