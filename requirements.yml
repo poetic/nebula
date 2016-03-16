@@ -8,3 +8,4 @@
 - src: geerlingguy.php-mysql
 - src: geerlingguy.composer
 - src: geerlingguy.drush
+- src: geerlingguy.drupal-console
