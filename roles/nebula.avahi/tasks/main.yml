@@ -20,3 +20,5 @@
 
 - name: add line to incrontab to restart avahi-aliases if aliases file is modified
   lineinfile: dest=/var/spool/incron/root create=yes line='/etc/avahi/aliases.d/aliases IN_MODIFY /sbin/restart avahi-aliases'
+  notify:
+    - restart incron

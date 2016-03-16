@@ -1,3 +1,6 @@
 ---
 - name: start avahi-aliases
   service: name=avahi-aliases state=started
+
+- name: restart incron
+  service: name=incron state=restarted
