@@ -5,8 +5,18 @@
     - avahi-daemon
     - python-avahi
     - python-pip
+    - incron
 
 - name: install avahi-aliases
   pip: name='git+git://github.com/till/avahi-aliases.git@topics/make-it-run' editable=false
   notify:
     - start avahi-aliases
+
+- name: install avahi-aliases update cron job
+  cron: name='update avahi-aliases' minute='*' job='if [ "$(ls -1 /var/www | sed s/$/.local/)" != "$(cat /etc/avahi/aliases.d/aliases)" ]; then ls -1 /var/www | sed s/$/.local/ > /etc/avahi/aliases.d/aliases; fi'
+
+- name: make sure incron allows root
+  lineinfile: dest=/etc/incron.allow line=root
+
+- name: add line to incrontab to restart avahi-aliases if aliases file is modified
+  lineinfile: dest=/var/spool/incron/root create=yes line='/etc/avahi/aliases.d/aliases IN_MODIFY /sbin/restart avahi-aliases'
