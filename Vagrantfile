@@ -4,6 +4,8 @@
 Vagrant.configure(2) do |config|
   config.vm.box = 'ubuntu/trusty64'
 
+  config.vm.hostname = 'nebula'
+
   config.vm.provision 'ansible' do |ansible|
     ansible.playbook = 'provisioning/playbook.yml'
     ansible.galaxy_role_file = 'provisioning/requirements.yml'
