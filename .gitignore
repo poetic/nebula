@@ -1,6 +1,6 @@
 .vagrant
 playbook.retry
-roles/*
-!roles/nebula*
-www
+provisioning/roles/*
+!provisioning/roles/nebula
+sites
 aliases/*
