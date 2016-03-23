@@ -1,0 +1,11 @@
+default: &default
+  user: root
+  port: 22
+  console: /usr/local/bin/drupal
+  host: nebula.local
+  user: vagrant
+  keys:
+    private: /Users/matthew/Development/vagrant/nebula/.vagrant/machines/default/virtualbox/private_key
+d8:
+  <<: *default
+  root: /var/www/d8/web
