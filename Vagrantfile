@@ -7,8 +7,8 @@ Vagrant.configure(2) do |config|
   config.vm.hostname = 'nebula'
 
   config.vm.provision 'ansible' do |ansible|
-    ansible.playbook = 'provisioning/playbook.yml'
-    ansible.galaxy_role_file = 'provisioning/requirements.yml'
+    ansible.playbook = './nebula/provisioning/playbook.yml'
+    ansible.galaxy_role_file = './nebula/provisioning/requirements.yml'
   end
 
   config.vm.network 'private_network', ip: '192.168.33.10'
