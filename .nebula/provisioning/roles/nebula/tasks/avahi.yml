@@ -23,7 +23,13 @@
 - name: make sure incron allows root
   lineinfile: dest=/etc/incron.allow line=root
 
-- name: add line to incrontab to restart avahi-aliases if aliases file is modified
-  lineinfile: dest=/var/spool/incron/root create=yes line='/etc/avahi/aliases.d/aliases IN_MODIFY /sbin/restart avahi-aliases'
+- name: ensure alias script exists
+  copy:
+    src: aliases
+    dest: /var/nebula/aliases
+    mode: "u+x,g+x"
+
+- name: run aliases script if aliases file is modified
+  lineinfile: dest=/var/spool/incron/root create=yes line='/etc/avahi/aliases.d/aliases IN_MODIFY sh /var/nebula/aliases'
   notify:
     - restart incron

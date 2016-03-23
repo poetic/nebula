@@ -1,0 +1,10 @@
+#!/bin/sh
+/sbin/restart avahi-aliases
+
+sed -i '/^### aliases$/q' /var/nebula/console/nebula.yml
+ls -1 /var/www | while read site;
+do
+echo "$site:
+  <<: *default
+  root: /var/www/$site/web" >> /var/nebula/console/nebula.yml
+done;
