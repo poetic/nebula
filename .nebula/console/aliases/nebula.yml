@@ -1,6 +1,4 @@
 default: &default
-  port: 22
-  console: /usr/local/bin/drupal
   host: nebula.local
   user: vagrant
   keys:

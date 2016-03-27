@@ -28,7 +28,16 @@ module VagrantPlugins
 
         def call(env)
           puts 'Adding site alias file...'
-          FileUtils.ln_s "#{Dir.pwd}/.nebula/console/nebula.yml", "#{Dir.home}/.console/sites/nebula.yml", force: true
+          alias_file = "#{Dir.pwd}/.nebula/console/aliases/nebula.yml"
+          ssh_private_key = "#{Dir.pwd}/.vagrant/machines/default/virtualbox/private_key"
+
+          # Write key file location into nebula.yml
+          text = File.read(alias_file)
+          new_contents = text.gsub(/(?<=private:.).*/, ssh_private_key)
+          File.open(alias_file, "w") {|file| file.puts new_contents }
+
+          # Symlink alias file
+          FileUtils.ln_s alias_file, "#{Dir.home}/.console/sites/nebula.yml", force: true
           @app.call(env)
         end
       end
