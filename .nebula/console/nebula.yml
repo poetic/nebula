@@ -1,0 +1,6 @@
+default: &default
+  host: nebula.local
+  user: vagrant
+  keys:
+    private: path to vagrant ssh key
+### aliases

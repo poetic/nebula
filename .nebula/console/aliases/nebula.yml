@@ -1,6 +1,0 @@
-default: &default
-  host: nebula.local
-  user: vagrant
-  keys:
-    private: /Users/matthew/Development/vagrant/nebula/.vagrant/machines/default/virtualbox/private_key
-### aliases
