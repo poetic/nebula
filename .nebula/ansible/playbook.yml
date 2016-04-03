@@ -9,6 +9,8 @@
     - geerlingguy.git
     - nebula
     - geerlingguy.postfix
+    - geerlingguy.daemonize
+    - geerlingguy.mailhog
     - geerlingguy.apache
     - geerlingguy.mysql
     - geerlingguy.php
