@@ -1,8 +1,8 @@
 # Nebula
 
 ##Environment Dependencies (install these first)
-VirtualBox https://www.virtualbox.org/wiki/Downloads
-Vagrant https://www.vagrantup.com/downloads.html
+* VirtualBox https://www.virtualbox.org/wiki/Downloads
+* Vagrant https://www.vagrantup.com/downloads.html
 
 ## Installation
 `git clone https://github.com/poetic/nebula.git`
@@ -14,8 +14,8 @@ run `vagrant up` inside the created /nebula folder
 
 ### Drupal Site Dependencies
 
-Drupal Console https://drupalconsole.com/
-Composer https://getcomposer.org/download/)
+* Drupal Console https://drupalconsole.com/
+* Composer https://getcomposer.org/download/)
 
 ###Installing a Drupal Site
 1. To create a drupal 8 site, clone this repository inside the /sites folder
