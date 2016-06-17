@@ -1,6 +1,6 @@
 ---
 - name: install packages required for avahi-aliases
-  package: name={{item}} state=latest update_cache=yes
+  apt: name={{item}} state=latest update_cache=yes
   with_items:
     - avahi-daemon
     - python-avahi
