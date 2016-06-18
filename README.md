@@ -10,9 +10,11 @@ We recommend using Homebrew for dependency installation.
 
 ## Requirements
 
-Vagrant 1.8.1 +
-Virtualbox 5 +
-ansible 2.0.1.0 +
+* Vagrant 1.8.1 +
+
+* Virtualbox 5 +
+
+* Ansible 2.0.1.0 +
 
 ## Installation
 `git clone https://github.com/poetic/nebula.git`
