@@ -1,20 +1,18 @@
 # Nebula
 
-##Environment Dependencies (install these first)
-We recommend using Homebrew for dependency installation.
-
-* VirtualBox https://www.virtualbox.org/wiki/Downloads
-* Vagrant https://www.vagrantup.com/downloads.html
-* Ansible http://docs.ansible.com/ansible/intro_installation.html
- - Must have at least version 2.0
-
 ## Requirements
 
 * Vagrant 1.8.1 +
+- https://www.vagrantup.com/downloads.html
 
 * Virtualbox 5 +
+- https://www.virtualbox.org/wiki/Downloads
 
 * Ansible 2.0.1.0 +
+- http://docs.ansible.com/ansible/intro_installation.html
+
+* Drupal Console 0.10.5 +
+- https://drupalconsole.com
 
 ## Installation
 `git clone https://github.com/poetic/nebula.git`
