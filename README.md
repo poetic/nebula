@@ -18,8 +18,9 @@ https://drupalconsole.com
 `git clone https://github.com/poetic/nebula.git`
 
 ## Usage
-`vagrant up` inside the created `/nebula` folder
-add site directories inside of `/sites` (e.g. `/nebula/sites/sitedirectory/`) they will be automatically aliased and accessible in your browser at `sitedirectory.local/` 
+* `vagrant up` inside the created `/nebula` folder
+* `vagrant status` to check the state of the server (must run inside `/nebula`)
+* site directories should be added to `/sites` (example: `/nebula/sites/sitedirectory`) and will be automatically aliased and accessible in your browser at `sitedirectory.local/`
 
 ##Creating a Site With Composer
 Install dependencies at https://github.com/poetic/drupal-project and clone inside your `/nebula/sites/` folder
