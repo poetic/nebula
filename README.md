@@ -20,6 +20,8 @@ https://drupalconsole.com
 ## Usage
 * `vagrant up` inside the created `/nebula` folder
 * `vagrant status` to check the state of the server (must run inside `/nebula`)
+* `vagrant halt` to pause the server (must run inside `/nebula`)
+* `vagrant destroy` erases your entire server (must run inside `/nebula`)
 * site directories should be added to `/sites` (example: `/nebula/sites/sitedirectory`) and will be automatically aliased and accessible in your browser at `sitedirectory.local/`
 
 ##Creating a Site With Composer
