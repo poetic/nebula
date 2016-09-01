@@ -1,5 +1,5 @@
 # Nebula
-Nebula uses Ansible (configuration management system) to provision a virtual machine that contains everything needed to run Drupal ( PHP, MySQL, Apache, etc… ) . Beyond that, the virtual machine sends out mDNS (automatic domain name resolution) and is configured it to have a shared folder between the host and virtual machine. You just drop your drupal site into a magic folder, apache will spin up a site, spin up a resolvable ‘sitename.local’ domain name, and you’re off to the races.
+Nebula uses Ansible (configuration management system) to provision a virtual machine that contains everything needed to run Drupal ( PHP, MySQL, Apache, etc… ). Beyond that, the virtual machine sends out mDNS (automatic domain name resolution) and is configured to have a shared folder between the host and virtual machine. You just drop your drupal site into a magic folder, apache will spin up a site, spin up a resolvable ‘sitename.local’ domain name, and you’re off to the races.
 
 ## Requirements
 
