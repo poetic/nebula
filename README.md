@@ -9,7 +9,7 @@ https://www.vagrantup.com/downloads.html
 * Virtualbox 5 +
 https://www.virtualbox.org/wiki/Downloads
 
-* Ansible 2.0.1.0 +
+* Ansible 2.2 +
 http://docs.ansible.com/ansible/intro_installation.html
 
 * Drupal Console 0.10.5 +

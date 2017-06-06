@@ -3,6 +3,7 @@
 - src: geerlingguy.apache
 - src: geerlingguy.mysql
   version: 2.2.1
+- src: geerlingguy.php-versions
 - src: geerlingguy.php
   version: 2.0.3
 - src: geerlingguy.php-pecl

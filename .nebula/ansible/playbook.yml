@@ -11,6 +11,7 @@
     - geerlingguy.postfix
     - geerlingguy.apache
     - geerlingguy.mysql
+    - geerlingguy.php-versions
     - geerlingguy.php
     - geerlingguy.php-pecl
     - geerlingguy.php-mysql
