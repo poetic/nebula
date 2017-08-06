@@ -1,5 +1,7 @@
 - src: geerlingguy.git
 - src: geerlingguy.postfix
+- src: geerlingguy.daemonize
+- src: geerlingguy.mailhog
 - src: geerlingguy.apache
 - src: geerlingguy.mysql
   version: 2.2.1
